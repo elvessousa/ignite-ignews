@@ -46,7 +46,6 @@ export default async function handler(
     }
 
     const { type } = event;
-    console.log(type);
 
     if (relevantEvents.has(type)) {
       console.log('Evento recebido', event);
