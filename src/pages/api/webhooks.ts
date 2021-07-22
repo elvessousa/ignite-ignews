@@ -48,7 +48,6 @@ export default async function handler(
     const { type } = event;
 
     if (relevantEvents.has(type)) {
-      console.log('Evento recebido', event);
       try {
         switch (type) {
           case 'customer.subscription.updated':

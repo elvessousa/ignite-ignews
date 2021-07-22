@@ -1,29 +1,29 @@
 $nav-height: 5rem;
 
 .headerContainer {
-  height: $nav-height;
   border-bottom: 1px solid var(--gray-800);
+  height: $nav-height;
 }
 
 .headerContent {
-  max-width: 1120px;
+  align-items: center;
+  display: flex;
   height: $nav-height;
   margin: 0 auto;
+  max-width: 1120px;
   padding: 0 2rem;
-  display: flex;
-  align-items: center;
 
   nav {
-    margin-left: $nav-height;
     height: $nav-height;
+    margin-left: $nav-height;
 
     a {
+      color: var(--gray-300);
       display: inline-block;
-      position: relative;
-      padding: 0 0.5rem;
       height: $nav-height;
       line-height: $nav-height;
-      color: var(--gray-300);
+      padding: 0 0.5rem;
+      position: relative;
       transition: color 0.2s;
 
       & + a {
@@ -40,14 +40,14 @@ $nav-height: 5rem;
       }
 
       &.active::after {
-        content: '';
-        height: 3px;
         background: var(--yellow-500);
         border-radius: 3px 3px 0 0;
-        width: 100%;
-        position: absolute;
         bottom: 1px;
+        content: '';
+        height: 3px;
         left: 0;
+        position: absolute;
+        width: 100%;
       }
     }
   }
