@@ -1,6 +1,6 @@
 <h1 align="center">ig.news</h1>
 
-#### Next Level Week #6
+#### Ignite
 
 ![Screenshot](./.github/ignews.png)
 
